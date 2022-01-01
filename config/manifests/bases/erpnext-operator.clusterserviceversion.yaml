@@ -1,0 +1,49 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: ClusterServiceVersion
+metadata:
+  annotations:
+    alm-examples: '[]'
+    capabilities: Basic Install
+  name: erpnext-operator.v0.0.0
+  namespace: placeholder
+spec:
+  apiservicedefinitions: {}
+  customresourcedefinitions:
+    owned:
+    - description: ERPNextServer is the Schema for the erpnextservers API
+      displayName: ERPNext Server
+      kind: ERPNextServer
+      name: erpnextservers.erpnext.com
+      version: v1alpha1
+  description: A Kubernetes operator to deploy and manage ERPNext clusters.
+  displayName: ERPNext Operator
+  icon:
+  - base64data: ""
+    mediatype: ""
+  install:
+    spec:
+      deployments: null
+    strategy: ""
+  installModes:
+  - supported: false
+    type: OwnNamespace
+  - supported: false
+    type: SingleNamespace
+  - supported: false
+    type: MultiNamespace
+  - supported: true
+    type: AllNamespaces
+  keywords:
+  - erp
+  - crm
+  links:
+  - name: ERPNext Operator
+    url: https://github.com/jomkz/erpnext-operator
+  maintainers:
+  - email: erpnext@mkz.io
+    name: John McKenzie
+  maturity: alpha
+  provider:
+    name: ERPNext Community
+    url: https://github.com/frappe/erpnext
+  version: 0.0.0
