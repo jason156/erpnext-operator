@@ -1,0 +1,6 @@
+apiVersion: erpnext.com/v1alpha1
+kind: ERPNextServer
+metadata:
+  name: erpnextserver-sample
+spec:
+  # Add fields here

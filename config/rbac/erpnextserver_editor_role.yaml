@@ -1,0 +1,24 @@
+# permissions for end users to edit erpnextservers.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: erpnextserver-editor-role
+rules:
+- apiGroups:
+  - erpnext.com
+  resources:
+  - erpnextservers
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - erpnext.com
+  resources:
+  - erpnextservers/status
+  verbs:
+  - get
