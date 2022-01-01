@@ -1,2 +1,3 @@
-# erpnext-operator
-A kubernetes operator for ERPNext.
+# ERPNext Operator
+
+A Kubernetes operator to deploy and manage ERPNext clusters.
