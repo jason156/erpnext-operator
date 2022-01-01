@@ -31,7 +31,8 @@ type ERPNextServerSpec struct {
 
 // ERPNextServerStatus defines the observed state of ERPNextServer
 type ERPNextServerStatus struct {
-	// INSERT ADDITIONAL STATUS FIELD - define observed state of cluster
+	// Conditions represent the latest available observations of an object's state
+	Conditions []metav1.Condition `json:"conditions"`
 }
 
 //+kubebuilder:object:root=true
