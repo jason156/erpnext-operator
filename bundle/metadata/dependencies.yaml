@@ -1,0 +1,11 @@
+dependencies:
+- type: olm.gvk
+  value:
+    group: mariadb.persistentsys
+    kind: MariaDB
+    version: v1alpha1
+- type: olm.gvk
+  value:
+    group: redis.redis.opstreelabs.in
+    kind: RedisCluster
+    version: v1beta1
